@@ -1,10 +1,14 @@
 /* Add CSS styling here */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+/* This is the open sans font used in the body */
+
+/*below is the site reset. I wanted to try it out and have a bigger challenge*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
+/* 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +30,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -47,16 +51,13 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */ 
+
+/*This is the end of the text reset*/
+/* ---- */
 
 
 
-
-
-
-*{
-border:solid red 1px;
-}
 
 header{
   background-color:#A4DBD9;
@@ -64,14 +65,113 @@ header{
 nav a{
   text-decoration: none;
   color:white;
+  padding:1%;
+  /* border:solid black;just here to see where the border is */
+}
+nav{
   display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+
+h1{
+  font-size:40px;
+  padding-bottom: 5%;/*find a better way for this*/
+}
+#home:hover{
+  background-color:#DBA4A6;
+  
+}
+
+#about:hover{
+  background-color:#BDA4DB
+}
+
+#contact:hover{
+  background-color:#C2DBA4;
+}
+
+#project:hover{
+  background-color:#DBA4A6;
+}
+
+#mainImg{
+  height:20rem;
+  display:flex;
+  justify-content: center;
+  margin-left:20px;
+
+}
+.info{
+  display:flex;
+  flex-wrap:wrap;
+ justify-content: space-between;  
+ align-items: center;
+}
+
+button{
+  padding:.5%;
+  border:none;
+  width: 15rem;
+  height:2rem;
+}
+
+.galleryTop{
+  display:flex;
+  justify-content: space-evenly;
+   /* height:20.0rem;  */
+  
+  flex-flow:row wrap;
+  margin-bottom: 5%;
+
+}
+
+/*thoughts on images?
+ width: 60vw; 
+  min-width: 360px; 
+  text-align: center; 
+  margin: 5% auto;
+  */
+
+.galleryBot{
+  display:flex;
+  justify-content: space-evenly;
+  flex-flow:row wrap;
+
 }
 body{
   background-color: #BDA4DB;
+  font-family: 'Open Sans Condensed', sans-serif;
+
 }
-/* button{
-  text-decoration: none;
-} */
+/* .ButtonContact{find how to make this button bigger
+  display:flex;
+  justify-content: center;
+  
+  
+}  */
+.centerinfo{
+  display: flex;
+  align-items: center;
+}
+
+.ButtonContact:hover{
+  background-color:#DBA4A6;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
 footer{
   background-color:#C2DBA4;
+  text-align: center;
+  align-items: center;
+  /*add later if needed*/
+  display:flex; 
+  flex-direction:column;
+ justify-content:center;
+ padding:2%; 
 }
