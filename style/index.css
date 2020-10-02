@@ -30,7 +30,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 } */
 HTML5 display-role reset for older browsers
-article, aside, details, figcaption, figure, 
+/* article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,7 +51,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-} 
+}  */
 
 This is the end of the text reset
 /* ---- */
@@ -59,6 +59,11 @@ This is the end of the text reset
 
 *{
   border:solid 1px;
+}
+
+.cc{
+  display:flex;
+  flex-direction: row;
 }
 
 header{
@@ -115,20 +120,23 @@ h1{
   margin-left:4%; 
 
 }
+
 .centerinfo{
   display: flex;
-  flex-direction:column;
-  justify-content: flex-end;
+  flex-direction:row;
+  flex-wrap:wrap; 
+  /* justify-content: flex-end; */
   align-items: center;
+   padding-bottom:5%; 
 }
-.tag{
+/* .tag{
   display:flex;
   flex-direction: column;
   flex-wrap:wrap;
  justify-content: space-between;  
  align-items: center;  
  
-}
+} */
 
 .info{
   display:flex;
@@ -136,6 +144,12 @@ h1{
   flex-wrap:wrap;
  justify-content: flex-end;  
  align-items: center;
+ width:60%;
+}
+
+.width{
+  width:60%;
+ 
 }
 
 .words{
@@ -150,6 +164,7 @@ button{
   width: 15rem;
   height:2rem;
   font-family: 'Open Sans Condensed', sans-serif;
+  text-size:3.0rem;
 }
 button:hover{
   background-color:#DBA4A6;
