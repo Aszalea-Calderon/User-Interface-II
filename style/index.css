@@ -57,9 +57,9 @@ table {
 /* ---- */
 
 
-*{
+/* *{
   border:solid 1px tomato;
-}
+} */
 
 /* .cc{
   display:flex;
@@ -151,6 +151,8 @@ h1{
   justify-content: flex-end;  
   align-items: center;
   width:50%;
+ letter-spacing: 2px;
+  line-height: 1.5;
   
 }
 
@@ -233,6 +235,7 @@ footer{
 
 header{
   height: 38vh;
+  
 }
 
 header h1{
