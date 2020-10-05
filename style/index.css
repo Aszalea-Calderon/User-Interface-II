@@ -8,7 +8,7 @@
    v2.0 | 20110126
    License: none (public domain) */
 
-/* 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,13 +24,13 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-} */
-HTML5 display-role reset for older browsers
-/* article, aside, details, figcaption, figure, 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -51,20 +51,20 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}  */
+} 
 
-This is the end of the text reset
+
 /* ---- */
 
 
 *{
-  border:solid 1px;
+  border:solid 1px tomato;
 }
 
-.cc{
+/* .cc{
   display:flex;
   flex-direction: row;
-}
+} */
 
 header{
   background-color:#A4DBD9;
@@ -84,7 +84,9 @@ nav{
 }
 
 h1{
-  font-size:40px;
+  display:flex;
+  justify-content: flex-start;
+  font-size:3.0rem;
   padding-left: 5%;
 }
 .moveButton{
@@ -127,6 +129,7 @@ h1{
   flex-wrap:wrap; 
   /* justify-content: flex-end; */
   align-items: center;
+
    padding-bottom:5%; 
 }
 /* .tag{
@@ -142,13 +145,15 @@ h1{
   display:flex;
   flex-direction:column;
   flex-wrap:wrap;
- justify-content: flex-end;  
- align-items: center;
- width:60%;
+  justify-content: flex-end;  
+  align-items: center;
+  width:50%;
+  
 }
 
 .width{
   width:60%;
+  text-align: left;
  
 }
 
@@ -164,7 +169,7 @@ button{
   width: 15rem;
   height:2rem;
   font-family: 'Open Sans Condensed', sans-serif;
-  text-size:3.0rem;
+  /* text-size:3.0rem; */
 }
 button:hover{
   background-color:#DBA4A6;
@@ -183,6 +188,9 @@ button:hover{
   justify-content: space-evenly;
   flex-flow:row wrap;
   padding-bottom: 2%;
+}
+img{
+  padding:3%;
 }
 body{
   background-color: #BDA4DB;
@@ -214,4 +222,59 @@ footer{
 }
 .zoom:hover{
   transform: scale(1.5);
+}
+
+
+/**Media Queries**/
+@media(max-width:800px){
+
+header h1{
+  display:flex;
+  /* justify-content:flex-end; */
+  align-items: center;
+  padding-left:0px;
+}
+
+nav{
+  background-color:#BDA4DB;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  width:80%;
+  margin:2.0rem;
+  margin-left:10%;
+  
+}
+ 
+ .centerinfo{
+   display:flex;
+  justify-content: column;
+  flex-direction: center;
+  width:100%;
+ 
+}  
+ 
+
+.mainImg{
+  padding:3%;
+}
+.galleryTop .galleryBot{
+  width:50%;
+  padding:20%;
+}
+
+img{
+  padding:3%;
+  height:40vh;
+}
+
+
+}
+
+@media(max-width:500px){
+ 
+  img{
+    width:30vh;
+  }
+
 }
